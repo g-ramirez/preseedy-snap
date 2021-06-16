@@ -1,0 +1,20 @@
+name: preseedy
+version: 0.0.1
+summary: Cloud-init preseed validator
+description: |
+  Preseedy does a basic syntax and schema check to ensure you have a
+  valid user-data preseed file for automating Ubuntu installations.
+base: core18
+confinement: classic
+parts:
+  preseedy:
+    plugin: python
+    python-version: python3
+    source: .
+    python-packages:
+    - jsonschema
+    - pyyaml
+
+apps:
+  preseedy:
+    command: bin/preseedy
