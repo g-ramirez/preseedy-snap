@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name = "preseedy",
-    version = "0.0.1",
+    version = "0.0.2",
     author = "Gabriel Ramirez",
     author_email = "gabriel.ramirez@canonical.com",
     description = ("Preseed validator."),

@@ -1,5 +1,5 @@
 name: preseedy
-version: 0.0.1
+version: 0.0.2
 summary: Cloud-init preseed validator
 description: |
   Preseedy does a basic syntax and schema check to ensure you have a
