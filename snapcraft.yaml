@@ -5,7 +5,7 @@ description: |
   Preseedy does a basic syntax and schema check to ensure you have a
   valid user-data preseed file for automating Ubuntu installations.
 base: core18
-confinement: classic
+confinement: strict
 parts:
   preseedy:
     plugin: python
@@ -18,3 +18,9 @@ parts:
 apps:
   preseedy:
     command: bin/preseedy
+    plugs:
+      - home
+      - network
+      - removable-media
+
+
