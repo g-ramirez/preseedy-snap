@@ -366,7 +366,7 @@ def main():
   try:  
     with open(sys.argv[1]) as f:
         yaml_file = f.read()
-    json_file = yaml.load(yaml_file)
+    json_file = yaml.load(yaml_file)['autoinstall']
   except Exception as e:
       print('Something is wrong with your syntax')  
       sys.exit(-1)
